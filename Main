@@ -1,1 +1,15 @@
+try:
+    from pyfirmata import Arduino, util
+except:
+    import pip
+    pip.main(['install','pyfirmata'])
+    from pyfirmata import Arduino, util
+import time
+
+board = Arduino('COM(Port') #Get Port Number from Device Manage
+
+iterator = util.Iterator(board)
+iterator.start()
+
+
 
