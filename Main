@@ -11,5 +11,6 @@ board = Arduino('COM(Port') #Get Port Number from Device Manage
 iterator = util.Iterator(board)
 iterator.start()
 
+Temp_In = board.get_pin('a.0.i')
 
 
