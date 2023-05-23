@@ -13,4 +13,22 @@ iterator.start()
 
 Temp_In = board.get_pin('a.0.i')
 
+# digital inputs
+TempUp = board.get_pin('d:2:i')
+TempDown = board.get_pin('d:3:i')
+
+# screen outputs
+pin_clk = board.get_pin('d:4:o')
+pin_din = board.get_pin('d:5:o')
+pin_dc = board.get_pin('d:6:o')
+pin_ce = board.get_pin('d:7:o')
+pin_rst = board.get_pin('d:8:o')
+
+# relay outputs
+
+divertValve = board.get_pin('d:9:o')
+compressor = board.get_pin('d:10:o')
+indoor_unit = board.get_pin('d:11:o')
+fan = board.get_pin('d:12:o')
+defrost = board.get_pin('d:13:o')
 
